@@ -40,6 +40,10 @@ I'll need a development container and a strategy to build a production
 container.
 Start here: https://hub.docker.com/_/perl
 
+That contains a sample Dockerfile, and one-liners to build and run it.
+So, doing our editing outside of the container and copying required files
+in to test/run for now.
+
 ### sqlite
 ### mysql
 ### postgress
@@ -60,3 +64,6 @@ Plan to create a scratch feature branch for daily commits and cherry pick to
 a feature branch to make the merge history coherent.  
 The feature branch then becomes a pull request to be merged into master.
 
+## docker notes
+
+Default ubuntu install doesn't seem to include docker.
